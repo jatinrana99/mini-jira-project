@@ -1,6 +1,4 @@
 package com.dummy.jira.Config;
-package com.dummy.jira.Config;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -20,7 +18,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:3000",
-                                "https://YOUR-VERCEL-URL.vercel.app"
+                                "https://mini-jira-frontend.vercel.app"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
